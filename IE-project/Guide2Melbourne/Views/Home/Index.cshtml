@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="scrolldiv">
+    <div class="bd">
+        <ul class="pic">
+            <li>
+                <img class="img-responsive" src="~/images/s1.jpg" alt="image1" />
+                <div class="vertical-middle w60-sm w80-xs red text-center">
+                    <h2 class="font36-sm font18-xs"></h2>
+                    <h1 class="font48-sm font24-xs"></h1>
+                </div>
+            </li>
+            <li>
+                <img class="img-responsive" src="~/images/s2.jpg" alt="image2" />
+                <div class="vertical-middle w60-sm w80-xs red text-center">
+                    <h2 class="font36-sm font18-xs"></h2>
+                    <h1 class="font48-sm font24-xs"></h1>
+                </div>
+            </li>
+            <li>
+                <img class="img-responsive" src="~/images/s3.jpg" alt="image3" />
+                <div class="vertical-middle w60-sm w80-xs red text-center">
+                    <h2 class="font36-sm font18-xs"></h2>
+                    <h1 class="font48-sm font24-xs"></h1>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="prev hidden-xs" href="javascript:void(0)"></a>
+    <a class="next hidden-xs" href="javascript:void(0)"></a>
+    <ul class="hd">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<div class="row m0 p0">
+    <div class="col-sm-12 m0 p0 text-center font48-sm font18-xs mt30-sm mb30-sm mt15-xs mb15-xs text-uppercase">
+        <a href="#" class="btn btn-danger mt10 p20-sm p10-xs font18">Get Started</a>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.SuperSlide.1.2.js"></script>
+    <script type="text/javascript">
+        var sd = $(".scrolldiv");
+        sd.hover(function () {
+            $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2);
+        }, function () {
+            $(this).find(".prev,.next").fadeOut();
+        });
+        sd.slide({
+            mainCell: ".bd ul",
+            effect: "fade",
+            delayTime: 500,
+            interTime: 5000,
+            autoPlay: "true"
+        });
+    </script>
+}
+
