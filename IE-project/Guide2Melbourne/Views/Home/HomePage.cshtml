@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--==========================
+Home Section
+============================-->
+<section id="home">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="scrolldiv">
+                    <div class="bd">
+                        <ul class="pic">
+                            <li><img class="img-responsive" src="~/images/MelbournePic1.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic2.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic3.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic4.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic5.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic6.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic7.jpg" alt="" /></li>
+                            <li><img class="img-responsive" src="~/images/MelbournePic8.jpg" alt="" /></li>
+                        </ul>
+                    </div>
+                    <a class="prev hidden-xs" href="javascript:void(0)"></a>
+                    <a class="next hidden-xs" href="javascript:void(0)"></a>
+                    <ul class="hd">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <script src="~/Scripts/jquery.SuperSlide.1.2.js"></script>
+                <script type="text/javascript">
+                    var sd = $(".scrolldiv");
+                    sd.hover(function () {
+                        $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2);
+                    }, function () {
+                        $(this).find(".prev,.next").fadeOut();
+                    });
+                    sd.slide({
+                        mainCell: ".bd ul",
+                        effect: "fade",
+                        delayTime: 500,
+                        interTime: 5000,
+                        autoPlay: "true"
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================
+Article Section
+============================-->
+<section id="article">
+    <div class="container wow fadeInUp">
+        <div class="row height-300">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                PUT YOUR CONTENT HERE   PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 ">
+                PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-home').addClass('menu-active');
+        });
+    </script>
+}
