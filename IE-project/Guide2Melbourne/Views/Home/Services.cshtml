@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!--==========================
+Services Section
+============================-->
+<section id="services">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Services</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Services Text</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="member">
+                    <div class="pic"><a href="/Home/Education"><img src="~/images/education.jpg" alt=""></a></div>
+                    <h4><a href="/Home/Education">Education</a></h4>
+                    <span>Education Text</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="member">
+                    <div class="pic"><a href="/Home/Community"><img src="~/images/community.jpg" alt=""></a></div>
+                    <h4><a href="/Home/Community">Community</a></h4>
+                    <span>Community Text</span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="member">
+                    <div class="pic"><a href="/Home/Medicine"><img src="~/images/medicine.jpg" alt=""></a></div>
+                    <h4><a href="/Home/Medicine">Medicine Services</a></h4>
+                    <span>Medicine Services Text</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-services').addClass('menu-active');
+        });
+    </script>
+}

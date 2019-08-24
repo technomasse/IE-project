@@ -1,7 +1,41 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<!--==========================
+About Section
+============================-->
+<section id="about">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">About Us</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">About Us Text</p>
+            </div>
+        </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+        <div class="row">
+            <div class="row height-300">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE  PUT YOUR CONTENT HERE
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-about').addClass('menu-active');
+        });
+    </script>
+}

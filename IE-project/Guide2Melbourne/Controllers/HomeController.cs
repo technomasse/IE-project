@@ -13,6 +13,11 @@ namespace Guide2Melbourne.Controllers
             return View();
         }
 
+        public ActionResult HomePage()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,10 +25,23 @@ namespace Guide2Melbourne.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Services()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult Education()
+        {
+            return View();
+        }
+
+        public ActionResult Community()
+        {
+            return View();
+        }
+
+        public ActionResult Medicine()
+        {
             return View();
         }
     }
